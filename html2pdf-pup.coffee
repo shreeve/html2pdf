@@ -7,33 +7,35 @@
 #  Legal: MIT License => https://opensource.org/licenses/MIT
 # =============================================================================
 
-### Install dependencies for Google Chrome Headless
-
-sudo apt-get install  \
-  libpangocairo-1.0-0 \
-  libx11-xcb-dev      \
-  libxcomposite-dev   \
-  libxcursor-dev      \
-  libxdamage-dev      \
-  libxi-dev           \
-  libxtst-dev         \
-  libnss3             \
-  libcups2-dev        \
-  libXss-dev          \
-  libxrandr-dev       \
-  libgconf-2-4        \
-  libasound2-dev      \
-  libatk1.0-0         \
-  libgtk-3-dev        \
-;
-
 ###
 
 # Install npm dependencies:
-#
-# npm install -g coffeescript@next
-# npm install puppeteer
-# npm install fs-extra
+
+  npm install -g coffeescript@next
+  npm install fs-extra
+  npm install puppeteer
+
+# Install dependencies for Google Chrome Headless
+
+  sudo apt-get install  \
+    libpangocairo-1.0-0 \
+    libx11-xcb-dev      \
+    libxcomposite-dev   \
+    libxcursor-dev      \
+    libxdamage-dev      \
+    libxi-dev           \
+    libxtst-dev         \
+    libnss3             \
+    libcups2-dev        \
+    libXss-dev          \
+    libxrandr-dev       \
+    libgconf-2-4        \
+    libasound2-dev      \
+    libatk1.0-0         \
+    libgtk-3-dev        \
+  ;
+
+###
 
 fs     = require 'fs-extra'
 path   = require 'path'

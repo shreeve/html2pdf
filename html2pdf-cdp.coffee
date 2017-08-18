@@ -7,21 +7,23 @@
 #  Legal: MIT License => https://opensource.org/licenses/MIT
 # =============================================================================
 
-### Launch Google Chrome Headless (macOS or Linux)
-
-    /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
-      --headless --remote-debugging-port=9222 --disable-gpu https://chromium.org &
-
-    node_modules/puppeteer/.local-chromium/linux-494755/chrome-linux/chrome-wrapper \
-      --headless --remote-debugging-port=9222 --disable-gpu https://chromium.org &
-
 ###
 
 # Install npm dependencies:
-#
-# npm install -g coffeescript@next
-# npm install chrome-remote-interface
-# npm install fs-extra
+
+  npm install -g coffeescript@next
+  npm install fs-extra
+  npm install chrome-remote-interface
+
+# Launch Google Chrome Headless (macOS or Linux)
+
+  /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
+    --headless --remote-debugging-port=9222 --disable-gpu https://chromium.org &
+
+  node_modules/puppeteer/.local-chromium/linux-494755/chrome-linux/chrome-wrapper \
+    --headless --remote-debugging-port=9222 --disable-gpu https://chromium.org &
+
+###
 
 fs     = require 'fs-extra'
 path   = require 'path'
